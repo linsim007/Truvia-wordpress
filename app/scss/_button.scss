@@ -1,0 +1,21 @@
+.btn {
+    &-truvia {
+        color: $white;
+        font-size: rem_calc(24px);
+    }
+    
+    &-bio {
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        outline: none;
+        
+        &:hover,
+        &:focus {
+            box-shadow: none;
+            border: 0;
+            border-radius: 0;
+            outline: none;
+        }
+    }
+}

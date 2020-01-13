@@ -1,0 +1,636 @@
+//styling banner 
+.banner {
+    padding: 150px 0;
+    margin-top: 150px;
+    
+    @media (max-width: 1050px) {
+        padding: 80px 0; 
+    }
+    
+    &-text {
+        max-width: 550px;
+        
+        @media (max-width: 768px) {
+            max-width: 300px; 
+        }
+        
+        @media (max-width: 700px) {
+            max-width: 100%; 
+        }
+    }
+    
+    &.bg-img {    
+        @media (max-width: 768px) {
+            background-position: 58%;
+        }
+        
+        @media (max-width: 700px) {
+            background-image: inherit !important;
+        }
+    }
+}
+
+//closeup section 
+.closeup {
+    padding: 250px 0;
+    background-attachment: fixed;
+    
+    @media (max-width: 768px) {
+        padding: 150px 0;
+    }
+    
+    @media (max-width: 400px) {
+        padding: 120px 0;
+    }
+    
+    &.desktop {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    
+    &.tab {
+        display: none; 
+        
+        @media (max-width: 768px) {
+            display: block;
+        }
+        
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
+    
+    &.mobile {
+        display: none;
+        
+        @media (max-width: 575px) {
+            display: block;
+        }
+    }
+}
+
+//styling instrument section 
+.instrument {
+    padding-bottom: 40px;
+    
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    &-text {
+        max-width: 550px;
+        padding-top: 150px;
+        
+        @media (max-width: 1300px) {
+            flex: 0 0 50%;
+            max-width: 50%; 
+            padding: 150px 0px 0px 30px;
+        }
+        
+        @media (max-width: 1050px) {
+            padding: 80px 0px 0px 30px;
+        }
+        
+        @media (max-width: 768px) {
+            max-width: 100%;
+            padding: 80px 10px 10px 10px;
+        }
+        
+        .entry-title,
+        .entry-text {
+            @media (max-width: 768px) {
+                max-width: 300px;
+                
+                &.another {
+                    max-width: 100%;
+                }
+            }
+            
+            @media (max-width: 700px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    
+    &-icon {
+        margin: 80px 0;
+        @media (max-width: 768px) {
+            margin-top: 150px;
+        }
+        
+        @media (max-width: 700px) {
+            margin-top: 40px;
+        }
+        
+        ul {
+            @media (max-width: 768px) {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+        }
+        
+        ul li {
+            display: flex;
+            flex-flow: row wrap; 
+            justify-content: space-between;
+            margin-bottom: 40px;
+            
+            @media (max-width: 768px) {
+                flex: 0 0 30%;
+                max-width: 30%;
+            }
+            
+            @media (max-width: 700px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            
+            div {
+                flex: 0 0 20%;
+                max-width: 30%;
+                
+                @media (max-width: 768px) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+            }
+            
+            span {
+                flex: 0 0 70%;
+                max-width: 70%;
+                color: $text;
+                font-size: rem_calc(24px);
+                
+                @media (max-width: 768px) {
+                    font-size: rem_calc(18px);
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    .pos {
+        background-position: 80% !important;
+        background-size: contain;
+    }
+    
+    .bg-img {
+        @media (max-width: 768px) {
+            background-size: contain;
+            background-position: 0% 0%;
+        }
+        
+        @media (max-width: 700px) {
+            background-image: inherit !important;
+        }
+    }
+}
+
+//inseight section styling 
+
+.inseight {
+    padding: 150px 0;
+    background-attachment: fixed;
+    
+    @media (max-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    &-text {
+        max-width: 70%;
+        margin: auto;
+        
+        @media (max-width: 768px) {
+            max-width: 85%;
+        }
+        
+        .title {
+            text-shadow: 2px 3px 8px $title;
+            width: 100%;
+        }
+        
+        .entry-text {
+            text-shadow: 2px 10px 8px $title;
+            
+            @media (max-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    &.desktop {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    
+    &.tab {
+        display: none; 
+        
+        @media (max-width: 768px) {
+            display: block;
+        }
+        
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
+    
+    &.mobile {
+        display: none; 
+        
+        @media (max-width: 575px) {
+            display: block;
+        }
+    }
+}
+
+//styling vision section 
+.vision {
+    padding: 100px 0;
+    
+    .entry-text {
+        width: 100%;
+    }
+    
+    p.title {
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+//styling news section 
+.news {
+    padding: 100px 0;
+    margin-top: 150px;
+    
+    .entry-text {
+        width: 100%;
+    }
+    
+    p.title {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+//read more button background image styling 
+.read-more {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    max-width: 142px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+//editing owl carousel default style 
+.owl-theme .owl-nav {
+    display: none;
+}
+
+.owl-theme .owl-dots {
+    margin-top: 60px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #4F9BCD;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $white;
+}
+
+//styling about us section
+
+.about {
+    padding: 200px 0;
+    
+    /* Style the tab */
+    .tabs {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+        
+        &.desktop {
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+        
+        .tab-link {
+            &.current{
+    			background: #EFF2F7;
+    			color: $text;
+            }    
+		}
+        
+        &.mobile {
+            display: none;
+            
+            @media (max-width: 991px) {
+                display: flex;
+            }
+        }
+	}
+
+	.tab-content {
+		display: none;
+		padding: 50px 15px;
+        background-color: #EFF2F7;
+        
+        &.current{
+    		display: inherit;
+    	}
+        
+        p {
+            font-size: rem_calc(24px);
+            color: $text;
+            
+            @media (max-width: 768px) {
+                font-size: rem_calc(18px);
+            }
+        }
+        
+        &-mobile {
+            display: none;
+            padding: 50px 0;
+        }
+	}
+}
+
+.board-directors {
+    /* Style the tab */
+    .tabs-2 {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+        
+        &.desktop {
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+        
+        &.mobile {
+            display: none;
+            
+            @media (max-width: 991px) {
+                display: flex;
+            }
+        }
+        
+        .tab-link {
+            &.current{
+    			background: #EFF2F7;
+    			color: $text;
+            }    
+		}
+	}
+
+    .tab-content2 {
+		display: none;
+		padding: 50px 15px;
+        background-color: #EFF2F7;
+        
+        &.current{
+    		display: inherit;
+    	}
+        
+        p {
+            font-size: rem_calc(24px);
+            color: $text;
+            
+            @media (max-width: 768px) {
+                font-size: rem_calc(18px);
+            }
+        }
+        
+        &-mobile {
+            display: none;
+            padding: 50px 0;
+        }
+	}
+}
+
+
+.directors {
+    background-color: #F7F8FA;
+    flex: 0 0 24%;
+    padding-bottom: 30px;
+    
+    @media (max-width: 991px) {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    @media (max-width: 450px) {
+        max-width: 375px;
+    }
+    
+    &-text {
+        margin-top: 15px; 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        height: 110px;
+        
+        @media (max-width: 1275px) {
+            height: 150px;
+        }
+        
+        .name {
+            flex: 0 0 100%;
+            max-width: 100%;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+            h4 {
+                color: $title;
+                font-size: rem_calc(24px);
+                
+                @media (max-width: 991px) {
+                    font-size: rem_calc(20px);
+                }
+            }
+            
+            p {
+                color: $text;
+                font-size: rem_calc(16px);
+            }
+            
+            &.visible {
+                flex: 0 0 85%;
+                max-width: 85%;
+            }
+        }
+        
+        .social {
+            flex: 0 0 15%;
+            max-width: 15%;
+            text-align: right;
+        }
+
+    }
+    
+    &-info {
+        .bio-link {
+            text-align: right;
+        } 
+    }
+    
+    &.active {
+        background-color: #eff2f7;
+        
+        @media (max-width: 991px) {
+            .tab-content-mobile {
+                display: block;
+            }
+            
+            .tab-content2-mobile {
+                display: block;
+            }
+        }
+    }
+}
+
+.desktop-tab-content {
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.directors-info > .img-fluid {
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+}
+
+.our-directors {
+    justify-content: space-between;
+}
+
+//styling modal 
+.modal-dialog {
+    max-width: 1000px;
+    width: 100%;
+} 
+
+//career section styling 
+.career {
+    padding: 100px 0;
+    
+    .entry-text {
+        width: 100%;
+    }
+    
+    p.title {
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+//truvia carousel seection styling 
+.truvia-carousel {
+    position: relative;
+    
+    .owl-theme .owl-dots {
+        margin: 0 !important;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .owl-theme .owl-dots .owl-dot span {
+        background: $white !important;
+        opacity: .5;
+    }
+    
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: $white !important;
+        opacity: 1;
+    }
+}
+
+//styling news section 
+.news {
+    padding: 100px 0; 
+    
+    &-title {
+        color: $title;
+        font-size: rem_calc(50px);
+        
+        @media (max-width: 768px) {
+            font-size: rem_calc(30px);
+        }
+    }
+    
+    &-header a {
+        font-size: rem_calc(36px);
+        color: $title;
+        
+        @media (max-width: 768px) {
+            font-size: rem_calc(26px);
+        }
+    }
+    
+    .cat {
+        a {
+            color: $title;
+            font-size: rem_calc(24px);
+            cursor: default;
+            pointer-events: none;
+            
+            @media (max-width: 768px) {
+                font-size: rem_calc(18px);
+            }
+        }
+        
+        span {
+            font-size: rem_calc(24px);
+            color: $text;
+            display: inline-block;
+            margin-left: 10px;
+            
+            @media (max-width: 768px) {
+                font-size: rem_calc(18px);
+            }
+        }
+    }
+    
+    .more {
+        display: inline-block;
+        margin-left: 10px;
+        color: $orange;
+        font-size: rem_calc(24px);
+        
+        @media (max-width: 768px) {
+            font-size: rem_calc(18px);
+        }
+    }
+    
+    &-truvian {
+        margin-bottom: 40px;
+        
+        &:last-of-type {
+            margin-bottom: 0;    
+        }
+    }
+}
+
+
+.page-template-homepage .news {
+    margin-top: 0;
+}
